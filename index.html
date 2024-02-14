@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head id="headpage">
+    <title> Midterm </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='js/script.js'></script>
+    <script src="https://kit.fontawesome.com/2e0dca148a.js" crossorigin="anonymous"></script>
+    <link href="https://db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=Lulo+Clean+W01+One+Bold" rel="stylesheet">
+</head>
+
+<body>
+    <div id="fullpage">
+        <div id="home">
+            <div class="homeHeader">
+                <a class="headers" href="#headepage">Home</a> 
+                <a class="headers" href="#aboutMe">About Me </a>
+                <a class="headers" href="">Experience</a>
+                <a class="headers" href="#projects">Projects</a>
+                <a class="headers" href="#contact">Contact Me </a>
+            </div>
+            <hr>
+            <div class ="Name"> 
+                <div id = 'title'>
+                    <h1>I<span class="symbol">'</span> M</h1>
+                    <h1>NAM PHAM <span class="symbol">.</span></h1>
+                </div>
+                <h2>
+                    Sophomore in Compter Science 
+                </h2>
+            
+            </div>
+        </div>
+        <!-- end of home -->
+        <div id = "aboutMe" >
+            <h3>About Me</h3>
+            <i id ="briefIntro">Undergraduate Computer Science major with a passion for programming
+                and problem-solving. Skilled in data structure, proficiency in Java and
+                Python, and UI design. Collaborative team player with a strong
+                commitment to delivering exceptional results and driving business
+                success.
+            </i> 
+            <div class ="skills">
+
+                <div class = "bar">
+                    <div class = "info">
+                        <span>HTML/CSS/JS</span>
+                        <div class = "progress-bar">
+                            <span class ="html"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class = "bar">
+                    <div class = "info">
+                        <span>Java</span>
+                        <div class = "progress-bar">
+                            <span class ="java"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "bar">
+                    <div class = "info">
+                        <span>Python</span>
+                        <div class = "progress-bar">
+                            <span class ="python"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "bar">
+                    <div class = "info">
+                        <span>C</span>
+                        <div class = "progress-bar">
+                            <span class ="c"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>  
+        </div>
+        <!-- end aboutme -->
+        
+        <div id="projects">
+            <div class="proContainer">
+                <h3 class="sub-title">My Work</h6>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="assets/newtab.png">
+                        <div class="layer">
+                            <h7> New Tab</h7>
+                            <p> A basic web design, have a podoromo time clock and a dragable sticky note</p>
+                            <p> Language: HTML/CSS/JS</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="work">
+                        <img src="assets/Poodle.png">
+                        <div class="layer">
+                            <h7> New Tab</h7>
+                            <p> This is a replicate of a Google Searching bar. Can Image search and Advanced google search</p>
+                            <p> Language: HTML/CSS</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="assets/Events.png">
+                        <div class="layer">
+                            <h7> Visual Novel Game</h7>
+                            <p> This is a visual novel game for my community project.</p>
+                            <p> Langue: Javascript      Software: Ren'py</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="ContactMe">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h5>Contact Me</h3>
+                        <p class="textContact"><i class="fa-solid fa-paper-plane"></i>&nbsp;nampham2823@gmail.com</p>
+                        <p class="textContact"><i class="fa-solid fa-phone"></i>&nbsp;(+1) 4086442970</p>
+                        <div class="social-icon">
+                            <a href="https://www.facebook.com/profile.php?id=100012741408718"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/pnn_nam28/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/nam-pham-1bb0a3254/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                        <a href="assets/resume.pdf" download class="btn">Download CV</a>
+                    </div>
+
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button  class="btn" type="submit">Submit</button>
+                        </form>    
+                        <span id="msg"></span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i></p>
+        </div>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwFSFmgbvlfIHxTsjIGN9HXseHwxGQOgVKF2VHX0JQa76kYBEiUvN92lW98ScJTb-Wq/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener("submit", e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+</html>

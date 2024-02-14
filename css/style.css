@@ -1,0 +1,341 @@
+body{
+    background: #000000;
+    color: #999;
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    scroll-behavior: smooth !important;
+}
+
+/* Start Home */
+.homeHeader{
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-left: 20%; 
+    margin-right: 20%; 
+    height: 60px;
+}
+.headers{
+    font-family: "Lulo Clean W01 One Bold";
+    color: #999;
+    text-decoration: none;
+}
+.headers:hover{
+    color:white;
+}
+
+#home{
+    background: url('../assets/home-bg.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+   
+}
+
+.Name{
+    color:white;
+    display:flex;
+    flex-direction:column;
+    margin-top: 130px;
+}
+
+.symbol{
+    color:#00D646;
+}
+
+h1{
+    display:flex;
+    align-items: center;
+    justify-content:left;
+    /* margin-top: -20px; */
+    margin-left: 30%;
+    font-size: 65px;
+    font-family: "Lulo Clean W01 One Bold";
+}
+
+h2{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-left: 30%;
+    margin-right:30%;
+    font-size: 30px;
+    font-family: "Lulo Clean W01 One";
+    gap: 10%;    
+}
+/* End of Home */
+
+/* Start About me */
+#aboutMe{
+    padding-bottom: 50px;
+}
+h3{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lulo Clean W01 One Bold";
+    font-size: 60px;
+}
+#briefIntro{
+    display: flex;
+    text-align: center;
+    line-height: 70px;
+    font-family: "Lulo Clean W01 One ";
+    font-size: 30px;
+    margin-left: 10%;
+    margin-right:10%;
+}
+/* end  aboutme */
+
+/* start progress bar */
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    line-height: 70px;
+    font-family: "Lulo Clean W01 One ";
+    font-size: 25px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 50px;
+}
+
+.bar{
+    margin: 20px 0;
+}
+
+.info{
+    margin-bottom: 10px;
+}
+
+.skills .bar .info span{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 15px;
+    background-color: #dddddd;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills .bar .progress-bar span{
+    position: absolute;
+    height:100%;
+    border-radius: 10px;
+    transform: scale(0);
+
+    background-color:#8B0000;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1)
+    forwards;
+}
+
+@keyframes animate{
+    100%{
+        transform: scale(1);
+    }
+}
+
+.html{
+    width: 70%;
+}
+
+.java{
+    width: 90%;
+}
+
+.python{
+    width:90%;
+}
+
+.c{
+    width: 40%;
+}
+/* end progression bar */
+/* start portfolio */
+#projects{
+    padding: 50px 0;
+
+}
+
+.work-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.work img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    /* transition: transfrom 0.5s; */
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 0 40px; */
+    text-align: center;
+    transition: height 0.5s;
+}
+.work:hover img{
+    transform: scale(1.3);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.layer h7{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: "Lulo Clean W01 One Bold";
+    color: white;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 30px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    text-align:center ;
+}
+/* end portfolio */
+/* start contactme */
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.contact-left{
+    flex-basis:35%;
+    margin-left: 10%;
+}
+
+.contact-right{
+    flex-basis:60%;
+    margin: 4% 10% 0 10%;
+}
+
+h5{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: "Lulo Clean W01 One Bold";
+    font-size: 40px;
+}
+.textContact{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: "Lulo Clean W01 One";
+    font-size: 30px;
+    margin-top:30px;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icon a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+}
+
+.contact-right form{
+    width:100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+/* button desgin */
+.btn{
+    display:inline-block;
+    background:#ff004f;
+    margin: 50px auto;
+    width:fit-content;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:#fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    border: 1px solid #ff004f;
+    background:#000000
+}
+
+#msg{
+    color:#61b752;
+    margin-top: -40px;
+    display: block;
+}
+/* end button design */
+
+.copyright{
+    width:100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+    font-family: "Lulo Clean W01 One";
+}
+
+/* css for small screen */
+/* @media only screen and (max-width: 600px){
+    #home{
+        background-image: url('./images/phoneimage.jpg');    
+        width: 100%;
+        height: 100%;
+    }
+    
+} */
